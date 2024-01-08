@@ -1,0 +1,20 @@
+<div class="card__container">
+    {{#with user}}
+    <div class="card__content">
+        <div class="user__container">
+            <div class="user__content">
+                <h1 class="user-title">Nome: {{name}}</h1>
+                <h4 class="user-number">#{{id}}</h4>
+            </div>
+            <p class="user-occupation">Profissão: {{occupation}}</p>
+
+            <div class="btn__container">
+                <a href="/users/edit/{{id}}" class="btn-edit">editar</a>
+                <form action="/users/delete/{{id}}" method="POST" class="delete-action">
+                    <button type="submit" class="btn-delete">Excluir</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{/with}}
+</div>

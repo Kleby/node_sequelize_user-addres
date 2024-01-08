@@ -1,0 +1,116 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    padding: .75rem;
+    box-shadow: 1px 0 2px var(--text-color);
+    background-color: var(--text-color);
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+}
+
+.header__brand {
+    color: var(--secondary-color);
+    display: block;
+    margin-right: .5rem;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.show-menu {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+}
+
+#cbMenu,
+#cbMenu::after,
+#cbMenu::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    background-color: var(--card-color);
+    transition: 400ms;
+}
+
+#cbMenu:checked,
+#cbMenu:checked::after,
+#cbMenu:checked::before {
+    position: relative;
+
+}
+
+#cbMenu {
+    appearance: none;
+    top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cbMenu::after {
+    top: 8px;
+    width: 28px;
+}
+
+#cbMenu::before {
+    top: 16px;
+}
+
+#cbMenu:checked {
+    rotate: 45deg;
+    top: 16px;
+}
+
+#cbMenu:checked::before {
+    rotate: 90deg;
+    top: 0;
+}
+
+#cbMenu:checked::after {
+    display: none;
+}
+
+.cbMenu-label {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 .5rem;
+    list-style: none;
+}
+
+.menu-item {
+    margin-right: 1rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: .5rem;
+    font-size: 1rem;
+    transition-duration: 400ms;
+}
+
+.menu-link:hover {
+    color: var(--secondary-color);
+}

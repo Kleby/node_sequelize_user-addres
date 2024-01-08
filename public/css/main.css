@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --primary-color: #1d1d1d;
+    --secondary-color: #f59115;
+    --card-color: #46332e; 
+    --text-color: #f0f3fa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Bebas Neue', sans-serif;
+    background: rgb(70,51,46);
+    background: linear-gradient(222deg, rgba(70,51,46,1) 0%, rgba(29,29,29,1) 20%, rgba(29,29,29,1) 70%, rgba(70,51,46,1) 100%);
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+    color: var(--text-color);
+}
